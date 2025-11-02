@@ -6,7 +6,6 @@ import {
   TableRow,
 } from "../../../components/ui/table";
 
-import Badge from "../../../components/ui/badge/Badge";
 
 interface Order {
   id: number;

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { Link } from "react-router";
 import { useSidebar } from "../context/SidebarContext";
-// import { ThemeToggleButton } from "../components/common/ThemeToggleButton";
+import { ThemeToggleButton } from "../components/common/ThemeToggleButton";
 import NotificationDropdown from "../components/header/NotificationDropdown";
 import UserDropdown from "../components/header/UserDropdown";
 
@@ -19,9 +19,9 @@ const AppHeader: React.FC = () => {
     }
   };
 
-  // const toggleApplicationMenu = () => {
-  //   setApplicationMenuOpen(!isApplicationMenuOpen);
-  // };
+  const toggleApplicationMenu = () => {
+    setApplicationMenuOpen(!isApplicationMenuOpen);
+  };
 
   const inputRef = useRef<HTMLInputElement>(null);
 
